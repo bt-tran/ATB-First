@@ -35,7 +35,6 @@ const AppointmentComponents = [AppointmentComponent];
     MatButtonModule,
     MatDialogModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
   entryComponents: [AppointmentComponent],
 })
