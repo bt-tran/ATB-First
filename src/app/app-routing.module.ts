@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { LandingPageComponent } from "./components/landing-page/landing-page.component";
-import { LandingPageModule } from "./components/landing-page/landing-page.module";
+import { LandingPageComponent } from "./views/landing-page/landing-page.component";
+import { LandingPageModule } from "./views/landing-page/landing-page.module";
 
 const PathModules = [LandingPageModule];
 

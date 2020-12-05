@@ -1,0 +1,54 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background-image: url("/assets/header.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .logo-atb-first {
+    height: 140px;
+    width: 310px;
+    background-image: url("/assets/logo-atb-first.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .area-title {
+    height: 140px;
+    margin-left: 12px;
+
+    .text-title {
+      font-size: 24px;
+      width: 220px;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    button {
+      font-weight: bold;
+      color: white;
+      background-color: #007cc7;
+    }
+  }
+}
+
+.section-content {
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.section-footer {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}

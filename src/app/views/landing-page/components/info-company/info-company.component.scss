@@ -1,0 +1,73 @@
+.section-topic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 240px;
+  margin-bottom: 40px;
+
+  .area-image {
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .area-content {
+    width: 60%;
+  }
+
+  .text-title {
+    padding: 20px 40px 10px 40px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .text-description {
+    padding: 0px 40px;
+
+    .text-topic {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+
+      mat-icon {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.image-work {
+  background-image: url("/assets/technologie.jpeg");
+}
+
+.image-service {
+  background-image: url("/assets/team.jpeg");
+}
+
+.image-call {
+  background-image: url("/assets/call.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-appointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  height: 300px;
+
+  .text-title {
+    color: white;
+    text-shadow: 0 0 6px #000;
+  }
+
+  button {
+    font-weight: bold;
+    color: white;
+    background-color: #007cc7;
+  }
+}
