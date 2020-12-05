@@ -1,8 +1,14 @@
-<div class="section-header">
-  <div class="logo-atb-first"></div>
+<div class="section-header bt-image">
+  <div class="logo-atb-first bt-image"></div>
   <div class="area-title">
     <div class="text-title">Die erste Wahl bei technischen Problemen</div>
-    <button mat-flat-button>Termin vereinbaren</button>
+    <button
+      mat-flat-button
+      class="bt-button-primary"
+      (click)="onMakeAppointment()"
+    >
+      Termin vereinbaren
+    </button>
   </div>
 </div>
 

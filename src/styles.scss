@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "Jost";
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 
   height: 100%;
   width: 100%;
@@ -8,5 +8,15 @@ body {
   margin: 0px;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$main-color: #007cc7;
+
+.bt-button-primary {
+  color: white;
+  background-color: $main-color;
+}
+
+.bt-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
