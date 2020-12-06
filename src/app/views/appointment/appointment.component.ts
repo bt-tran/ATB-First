@@ -7,8 +7,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppointmentComponent implements OnInit {
   public contactInfo = {
-    mail: "atb-first@gmail.com",
-    phone: "+49 176 423544633",
+    mail: "atb-first@web.de",
+    phone: "+49 176 64918303",
   };
 
   constructor() {}

@@ -5,6 +5,10 @@
   }
 }
 
+:host {
+  display: flex;
+}
+
 .container-appointment {
   display: flex;
   flex-direction: column;
