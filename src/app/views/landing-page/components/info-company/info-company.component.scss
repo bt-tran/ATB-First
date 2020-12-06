@@ -1,8 +1,12 @@
+:host {
+  overflow-x: auto;
+}
+
 .section-topic {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 240px;
+  min-height: 240px;
   margin-bottom: 40px;
 
   .area-image {
