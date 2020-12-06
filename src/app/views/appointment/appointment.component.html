@@ -1,25 +1,29 @@
 <div class="container-appointment bt-image">
-  <div class="text-page-title">
-    Termin vereinbaren
-  </div>
+  <div class="text-page-title">Termin vereinbaren</div>
 
   <div class="section-contact">
     <div class="text-description">
-      Sie erreichen ihre persönliche ATB 1st Beraterin unter folgenden
+      Sie erreichen ihre persönliche ATB 1st Ansprechspartnerin unter folgenden
       Möglichkeiten:
     </div>
-    <div class="section-phone-number">
+    <div
+      class="section-phone-number"
+      (click)="onCopyToClipboard(contactInfo.mail)"
+    >
       <mat-icon>email</mat-icon>
-      <div class="text-phone">atb-first@gmail.com</div>
+      <div class="text-phone">{{ contactInfo.mail }}</div>
     </div>
-    <div class="section-phone-number">
+    <div
+      class="section-phone-number"
+      (click)="onCopyToClipboard(contactInfo.phone)"
+    >
       <mat-icon>smartphone</mat-icon>
-      <div class="text-phone">+49 176 423544633</div>
+      <div class="text-phone">{{ contactInfo.phone }}</div>
     </div>
   </div>
 
   <div class="section-times">
-    <div class="text-title-time">Unsere Beratungszeiten</div>
+    <div class="text-title-time">Unsere Sprechzeiten</div>
     <div class="area-grid">
       <div>Mo, Di, Fr</div>
       <div>10 - 20Uhr</div>

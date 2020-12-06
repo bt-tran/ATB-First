@@ -7,9 +7,6 @@
 
   .area-image {
     width: 40%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .area-content {
@@ -47,9 +44,6 @@
 
 .image-call {
   background-image: url("/assets/call.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .section-appointment {
@@ -63,11 +57,5 @@
   .text-title {
     color: white;
     text-shadow: 0 0 6px #000;
-  }
-
-  button {
-    font-weight: bold;
-    color: white;
-    background-color: #007cc7;
   }
 }

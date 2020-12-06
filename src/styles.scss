@@ -20,3 +20,8 @@ $main-color: #007cc7;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
