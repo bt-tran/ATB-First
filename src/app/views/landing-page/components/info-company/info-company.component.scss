@@ -13,7 +13,7 @@
     align-items: flex-end;
 
     .text-title {
-      align-self: flex-end;
+      text-align: right;
     }
   }
 
@@ -21,8 +21,15 @@
     flex-wrap: wrap-reverse;
 
     .text-title {
-      align-self: flex-start;
+      text-align: left;
     }
+  }
+
+  .text-title {
+    padding: 10px 0px;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: bold;
   }
 
   .area-image {
@@ -46,14 +53,6 @@
     margin: 0px 30px;
     max-width: 400px;
 
-    .text-title {
-      padding: 10px 20px;
-      margin-bottom: 6px;
-      border-radius: 50px;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
     .text-topic {
       display: flex;
       align-items: flex-start;
@@ -69,18 +68,19 @@
 .section-appointment {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   margin-top: 60px;
   height: 300px;
   background-size: cover;
 
   .text-title {
+    text-align: center;
+    background-color: transparent;
     align-self: center;
     color: white;
     text-shadow: 0 0 6px #000;
-    text-align: center;
-    background-color: transparent;
   }
 }
 
