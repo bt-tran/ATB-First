@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { MatSnackBar } from "@angular/material";
 
 @Component({
   selector: "app-appointment",
@@ -11,14 +12,18 @@ export class AppointmentComponent implements OnInit {
     phone: "+49 176 64918303",
   };
 
-  constructor() {}
+  constructor(private _snackBar: MatSnackBar) {}
 
   ngOnInit() {}
 
   public onCopyToClipboard(value: any): void {
     (window.navigator as any).clipboard
       .writeText(value)
-      .then()
+      .then(() => {
+        this._snackBar.open(value + " kopiert", null, {
+          duration: 1000,
+        });
+      })
       .catch((e) => console.error(e));
   }
 }
