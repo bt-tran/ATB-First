@@ -1,5 +1,5 @@
 <div class="section-header bt-image">
-  <div class="logo-atb-first"></div>
+  <div class="logo-atb-first animate__animated animate__fadeIn"></div>
   <div class="area-title">
     <div class="text-title">Die erste Wahl bei technischen Problemen</div>
     <button
@@ -12,12 +12,18 @@
   </div>
 </div>
 
-<div class="section-content">
-  <app-info-service></app-info-service>
-  <app-info-company></app-info-company>
-  <div class="area-footer">
-    <div>Copyright ATB First</div>
-    <div>Kontakt: atb-first@web.de</div>
-    <div>V0.8 Beta</div>
+<ng-container *ngIf="!showView">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</ng-container>
+
+<ng-container *ngIf="showView">
+  <div class="section-content">
+    <app-info-service></app-info-service>
+    <app-info-company></app-info-company>
+    <div class="area-footer">
+      <div>Copyright ATB First</div>
+      <div>Kontakt: atb-first@web.de</div>
+      <div>V0.8 Beta</div>
+    </div>
   </div>
-</div>
+</ng-container>

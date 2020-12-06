@@ -11,7 +11,9 @@
       Auch wenn ihr Kalendar voll ist, gemeinsam finden wir einen Termin.
     </div>
   </div>
-  <div class="area-image image-work image-right"></div>
+  <div
+    class="area-image image-work image-right animate__animated animate__fadeInRight"
+  ></div>
 </div>
 
 <div class="section-topic section-company image-left">
@@ -31,13 +33,33 @@
   </div>
 </div>
 
-<div class="section-topic section-appointment image-call bt-image">
-  <div class="text-title">Sie hätten gerne einen Termin?</div>
-  <button
-    mat-flat-button
-    class="bt-button-primary"
-    (click)="onMakeAppointment()"
-  >
-    Termin vereinbaren
-  </button>
+<div class="section-topic section-appointment">
+  <div class="text-title">Unverbindliche Erstberatung</div>
+  <div
+    class="area-image image-call bt-image animate__animated animate__fadeInLeft"
+  ></div>
+  <div class="area-description">
+    <div class="text-topic">
+      <mat-icon>favorite_border</mat-icon>
+      Kundenzufriedenheit steht bei uns an 1. Stelle!
+    </div>
+    <div class="text-topic">
+      <mat-icon>map</mat-icon>
+      Unser Einsatzbereich ist hauptsächlich im Großraum Nürnberg, Fürth und
+      Erlangen.
+    </div>
+    <div class="text-topic">
+      <mat-icon>attach_money</mat-icon>
+      Egal welches Budget, wir finden gemeinsam eine Lösung! Die erste Beratung
+      ist komplett kostenlos und unverbindlich. Sie haben Fragen? Rufen Sie doch
+      einfach mal an.
+    </div>
+    <button
+      mat-flat-button
+      class="bt-button-primary"
+      (click)="onMakeAppointment()"
+    >
+      Termin vereinbaren
+    </button>
+  </div>
 </div>
