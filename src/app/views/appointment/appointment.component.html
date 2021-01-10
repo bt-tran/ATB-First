@@ -19,7 +19,7 @@
       (click)="onCopyToClipboard(contactInfo.mail)"
     >
       <mat-icon>email</mat-icon>
-      <div class="text-info">{{ contactInfo.mail }}</div>
+      <a class="text-info" a href="mailto:{{contactInfo.mail}}">{{ contactInfo.mail }}</a>
     </div>
   </div>
 
