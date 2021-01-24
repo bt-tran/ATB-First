@@ -9,7 +9,7 @@ import { MatSnackBar } from "@angular/material";
 export class AppointmentComponent implements OnInit {
   public contactInfo = {
     mail: "atb-first@web.de",
-    phone: "+49 176 64918303",
+    phone: "+49176 71990969",
   };
 
   constructor(private _snackBar: MatSnackBar) {}

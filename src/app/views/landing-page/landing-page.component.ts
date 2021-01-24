@@ -1,20 +1,26 @@
-import { AfterViewInit, Component, OnInit } from "@angular/core";
+import { AfterViewInit, Component } from "@angular/core";
 import { MatDialog } from "@angular/material";
+import { NavigationEnd, Router } from "@angular/router";
 import { AppointmentComponent } from "../appointment/appointment.component";
+
+declare let ga: Function;
 
 @Component({
   selector: "app-landing-page",
   templateUrl: "./landing-page.component.html",
   styleUrls: ["./landing-page.component.scss"],
 })
-export class LandingPageComponent implements OnInit, AfterViewInit {
-  public showView: boolean;
+export class LandingPageComponent implements AfterViewInit {
+  public showView: boolean = false;
 
-  constructor(public dialog: MatDialog) {
-    this.showView = false;
+  constructor(public readonly router: Router, public readonly dialog: MatDialog) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+      }
+    });
   }
-
-  ngOnInit() {}
 
   ngAfterViewInit(): void {
     setTimeout(() => {

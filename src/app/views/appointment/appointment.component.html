@@ -3,16 +3,14 @@
 
   <div class="section-contact">
     <div class="text-description">
-      Sie erreichen ihre persönliche ATB 1st Ansprechspartnerin unter folgenden
+      Sie erreichen ihren persönlichen ATB 1st Ansprechspartner unter folgenden
       Möglichkeiten:
     </div>
     <div
       class="area-contact-info"
-      (click)="onCopyToClipboard(contactInfo.phone)"
     >
       <mat-icon>smartphone</mat-icon>
-      <!-- <div class="text-info">{{ contactInfo.phone }}</div> -->
-      <div class="text-info">Bald wieder verfügbar</div>
+      <a class="text-info" href="tel:{{contactInfo.phone}}">{{ contactInfo.phone }}</a>
     </div>
     <div
       class="area-contact-info"

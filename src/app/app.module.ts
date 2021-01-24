@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import {
   MatButtonModule,
   MatIconModule,
-  MatProgressBarModule,
+  MatProgressBarModule
 } from "@angular/material";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -27,7 +27,7 @@ const LandingPageComponents = [
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatProgressBarModule,
+    MatProgressBarModule
   ],
   bootstrap: [AppComponent],
   entryComponents: [AppointmentComponent],
